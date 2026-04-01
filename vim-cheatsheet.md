@@ -1,81 +1,91 @@
-ESC = retorna ao modo comando
+# Vim Cheat Sheet
 
-MODO DE INSERÇÃO
+---
 
-i = inserir na posição do cursor
-I = inserir no inicio da linha
-o = inserir texto na linha abaixo
-O = inserir texto na linha acima
-a = inserir um caractere a frente
-A = inserir no final da linha
+## Geral
 
-SALVANDO E SAINDO
-:w = Salvar
-:q = Sair
-:qa = Sair de todos os arqs abertos
-:q! = Sair forçando
-:wq = Sair e Salvar
-:x = Sair e Salvar
-ZZ = Zair e Zalvar - Sair e Salvar
-ZQ = Zair sem salvar
+- `ESC` - Retorna ao Modo Comando.
+- `.` - Repete o último comando de edição.
 
-COPIANDO COLANDO E RECORTANDO
-yy = copia
-p = cola na linha abaixo
-P = cola na linha acima
-y8y = copiar 8 linhas (yNy - copiar N linhas) 
-dd = apaga / recorta a linha inteira
-d8d = apaga / recorta 8 linhas inteiras
-dw = apaga uma palavra
-dG = apaga da posiçao atual ate o final do arquivo
-dgg = apaga da posiçao atual ate o inicio do arquivo
-cw = recortou uma palavra
-yw = copiar uma palavra
-y$ = copiar do cursor até o final da linha
-y^ = copiar do cursor até o início da linha
-x = apaga um caractere (igual ao Delete)
-X = apaga um caractere antes do cursor (igual ao backspace)
-r + N = replace - substituir o caractere atual pelo N
+## Modo de Inserção
 
-VISUAL
-v = visual - selecionar um pedaço do texto
-V = visual line - selecionar linhas do texto
-CTRL + v = visual block - selecionar um bloco de texto
+- `i` - Insere texto na posição do cursor.
+- `I` - Insere texto no início da linha.
+- `o` - Insere texto na linha abaixo.
+- `O` - Insere texto na linha acima.
+- `a` - Insere texto um caractere à frente.
+- `A` - Insere texto no final da linha.
 
-VOLTANDO E REFAZENDO
-u = voltar
-CTRL + Z = refazer
+## Salvar e sair
+- `:w` - Salva o arquivo.
+- `:q` - Sai do arquivo, que precisa estar salvo.
+- `:qa` - Sai de todos os arquivos abertos, que precisam estar salvos.
+- `:q!` - Sai do arquivo de forma forçada (se não foi salvo, progresso é perdido).
+- `:wq` - Salva o arquivo e sai.
+- `:x` - Salva o arquivo e sai.
+- `ZZ` - Salva o arquivo e sai.
+- `ZQ` - Sai do arquivo sem salvar.
 
-BUSCAS e LOCALIZAÇÃO
-/STRIGUS = buscar a palavra STRIGUS descendo arquivo
-?STRIGUS = buscar a palavra STRIGUS subindo o arquivo
-n = continua com a busca
-N = continua com a busca ao contrario
-gg = vai para a primeira linha
-G = vai para a ultima linha
-M = meio da tela
-H = no alto da tela
-L = na parte da tela
+## Copiar,  colar e recortar
+- `yy` - Copia a linha inteira.
+- `yw` - Copia uma palavra.
+- `y$` - Copia do cursor até o final da linha.
+- `y^` - Copia do cursor até o início da linha.
+- `p` - Cola o conteúdo na linha abaixo.
+- `P` - Cola o conteúdo na linha acima.
+- `yNy` - Copia `N` linhas inteiras.
+- `dd` - Apaga/recorta a linha inteira.
+- `dNd` - Apaga/recorta `N` linhas inteiras.
+- `dw` - Apaga uma palavra.
+- `dG` - Apaga da posição atual até o final do arquivo.
+- `dgg` - Apaga da posição atual até o início do arquivo.
+- `cw` - Apaga/recorta uma palavra e entra no Modo de Inserção.
+- `x` - Apaga o caractere atual (igual ao Delete).
+- `X` - Apaga o caractere antes do cursor (igual ao backspace).
+- `rN` - Substitui o caractere atual pelo `N`.
 
-COMANDOS set
+## Modo Visual
+- `v` (visual) - Seleciona um pedaço do texto.
+- `V` (visual line) - Seleciona linhas do texto.
+- `Ctrl + v` (visual block) - Seleciona um bloco de texto.
 
-:set nlsearch = highlight para as buscas
-:set number = numera as linhas
-:set tabstop = Tamanho do TAB
-:set expandtab = converte o TAB em espaços
-:set bg=light = muda o esquema de cor
-:e BLA = abre outro arquivo BLA
-:r BLA = copia o conteudo do arquivo BLA para o arquivo atual
-:split BLA = divide a tela com o arquivo BLA
-:vsplit BLA = divide a tela com o arquivo BLA
-:! comando = executa o comando no shell e retorna para o vim
-!! comando = executa e copia/cola o comando para dentro do arquivo
+## Desfazer e refazer
+- `u` - Defaz ação.
+- `Ctrl + r` - Refaz ação.
+- `g+` - Refaz todas as ações até o estado mais novo do arquivo.
 
+## Localizar
+- `/palavra` - Busca a palavra de modo descendente.
+- `?palavra` - Busca a palavra de modo ascendente.
+- `n` - Continua com a busca.
+- `N` - Continua com a busca no sentido inverso.
+- `gg` - Move o cursor para o início da primeira linha.
+- `G` - Move o cursor para o início da última linha.
+- `M` - Move o cursor para o início da linha no meio da tela.
+- `H` - Move o cursor para o início da linha no alto da tela.
+- `L` - Move o cursor para o início da linha no fim da tela.
 
-SUBSTITUINDO
-:40s/palavra_antiga/palavra_novo/ = substitui na linha 40 a palavara_antiga
-:40,50s/palavra_antiga/palavra_novo/ = substitui entre a linha 40 e a linha 50 a palavara_antiga
-:%s/palavra_antiga/palavra_novo/ = substitui a palavara_antiga em todo o arquivo - uma palavra por linha
-:%s/palavra_antiga/palavra_novo/g = substitui a palavara_antiga em todo o arquivo
+## Substituir
+- `:40s/palavra-antiga/palavra-nova/` - Substitui na linha 40 a `palavra-antiga` pela `palavra-nova`.
+- `:40,50s/palavra-antiga/palavra-nova/` - Substitui entre as linhas 40 e 50 a `palavra-antiga` pela `palavra-nova`.
+- `:%s/palavra-antiga/palavra-nova/` - Substitui a `palavra-antiga` pela `palavra-nova` em todo o arquivo,  uma palavra por linha.
+- `:%s/palavra-antiga/palavra-novo/g` - Substitui a `palavara-antiga` pela `palavra-nova` em todo o arquivo.
 
+## Comandos `set` para configuração
 
+- `:set nlsearch` - Habilita destaque para os resultados das buscas.
+- `:set nonlsearch` - Desabilita destaque para os resultados das buscas.
+- `:set number` ou `:set nu` - Exibe numeração de linhas.
+- `:set nonumber` ou `:set nonu` - Retira numeração de linhas.
+- `:set tabstop=N` - Configura tamanho do TAB para `N` espaços.
+- `:set tabstop?` - Exibe configuração atual do tabstop.
+- `:set expandtab` - Converte o TAB em espaços.
+- `:set bg=light` ou `:set bg=dark` - Ajusta o esquema de cor dos destaques, de acordo com a cor do plano de fundo do Terminal (claro ou escuro).
+
+## Outros comandos
+- `:e ARQUIVO` - Abre outro arquivo chamado `ARQUIVO`.
+- `:r ARQUIVO` - Copia o conteúdo do arquivo `ARQUIVO` para o arquivo atual.
+- `:split ARQUIVO` - Divide a tela horizontalmente com o arquivo `ARQUIVO`.
+- `:vsplit ARQUIVO` - Divide a tela verticalmente com o arquivo `ARQUIVO.`
+- `:! COMANDO` - Executa o comando `COMANDO` no Shell e retorna para o Vim.
+- `!! COMANDO` - Executa o comando `COMANDO` em segundo plano e cola sua saída dentro do arquivo.
