@@ -2,7 +2,7 @@
 
 ---
 
-## Confiuração inicial
+## Configuração inicial
 - `git init` - Cria um novo repositório local.
 - `git clone <url>` - Baixa um repositório do servidor.
 - `git config --global user.name "Seu Nome"` - Define seu nome para os commits.
@@ -16,6 +16,11 @@
 - `git add .` - Adiciona todas as mudanças ao staging.
 - `git diff --cached` - Revisa o que será commitado.
 - `git commit -m "Mensagem clara"` - Grava alterações com descrição.
+- `git add -p` - Abre o modo interativo para revisar e selecionar blocos de código (hunks) antes do commit. Principais opções:
+  - `y` (yes) - Aceita o bloco atual no stage.
+  - `n` (no) - Pula o bloco atual e o mantém apenas localmente.
+  - `s` (split) - Divide o bloco em partes menores para maior precisão.
+  - `q` (quit) - Finaliza a sessão salvando apenas o que já foi aceito.
 
 ## Gerenciamento de branches
 - `git branch` - Lista branches locais.
