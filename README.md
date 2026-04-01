@@ -8,5 +8,5 @@ Repositório dedicado a armazenar listas de comandos úteis relacionados a diver
 
 ## Arquivos atualmente disponíveis:
 
-- ### [Git] (https://github.com/omarciodanilo/cheatsheets/blob/main/git-cheatsheet.md)
-- ### [Vim] (https://github.com/omarciodanilo/cheatsheets/blob/main/vim-cheatsheet.md)
+- ### [Git](https://github.com/omarciodanilo/cheatsheets/blob/main/git-cheatsheet.md)
+- ### [Vim](https://github.com/omarciodanilo/cheatsheets/blob/main/vim-cheatsheet.md)
