@@ -79,12 +79,12 @@
 - `:40s/palavra-antiga/palavra-nova/` - Substitui na linha 40 a `palavra-antiga` pela `palavra-nova`.
 - `:40,50s/palavra-antiga/palavra-nova/` - Substitui entre as linhas 40 e 50 a `palavra-antiga` pela `palavra-nova`.
 - `:%s/palavra-antiga/palavra-nova/` - Substitui a `palavra-antiga` pela `palavra-nova` em todo o arquivo,  uma palavra por linha.
-- `:%s/palavra-antiga/palavra-novo/g` - Substitui a `palavara-antiga` pela `palavra-nova` em todo o arquivo.
+- `:%s/palavra-antiga/palavra-nova/g` - Substitui a `palavra-antiga` pela `palavra-nova` em todo o arquivo.
 
 ## Comandos `set` para configuração
 
-- `:set nlsearch` - Habilita destaque para os resultados das buscas.
-- `:set nonlsearch` - Desabilita destaque para os resultados das buscas.
+- `:set hlsearch` - Habilita destaque para os resultados das buscas.
+- `:set nohlsearch` - Desabilita destaque para os resultados das buscas.
 - `:set number` ou `:set nu` - Exibe numeração de linhas.
 - `:set nonumber` ou `:set nonu` - Retira numeração de linhas.
 - `:set tabstop=N` - Configura tamanho do TAB para `N` espaços.
@@ -96,6 +96,6 @@
 - `:e ARQUIVO` - Abre outro arquivo chamado `ARQUIVO`.
 - `:r ARQUIVO` - Copia o conteúdo do arquivo `ARQUIVO` para o arquivo atual.
 - `:split ARQUIVO` - Divide a tela horizontalmente com o arquivo `ARQUIVO`.
-- `:vsplit ARQUIVO` - Divide a tela verticalmente com o arquivo `ARQUIVO.`
+- `:vsplit ARQUIVO` - Divide a tela verticalmente com o arquivo `ARQUIVO`.
 - `:! COMANDO` - Executa o comando `COMANDO` no Shell e retorna para o Vim.
 - `!! COMANDO` - Executa o comando `COMANDO` em segundo plano e cola sua saída dentro do arquivo.
