@@ -7,6 +7,16 @@
 - `ESC` - Retorna ao Modo Comando.
 - `.` - Repete o último comando de edição.
 
+## Navegação
+
+- `h` - Movimenta o cursor para a esquerda.
+- `j` - Movimenta o cursor para baixo.
+- `k` - Movimenta o cursor para cima.
+- `l` - Movimenta o cursor para a direita.
+- `w` - Movimenta o cursor para a palavra seguinte.
+- `b` - Movimenta o cursor para a palavra anterior.
+- `Ctrl + w + seta direcional` ou `Ctrl + w + h, j, k, l` - Alterna entre janelas.
+
 ## Modo de Inserção
 
 - `i` - Insere texto na posição do cursor.
