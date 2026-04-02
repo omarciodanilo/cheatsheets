@@ -7,14 +7,19 @@
 - `ESC` - Retorna ao Modo Comando.
 - `.` - Repete o último comando de edição.
 
-## Navegação
+## Navegar
 
-- `h` - Movimenta o cursor para a esquerda.
-- `j` - Movimenta o cursor para baixo.
-- `k` - Movimenta o cursor para cima.
-- `l` - Movimenta o cursor para a direita.
-- `w` - Movimenta o cursor para a palavra seguinte.
-- `b` - Movimenta o cursor para a palavra anterior.
+- `h` - Move o cursor para a esquerda.
+- `j` - Move o cursor para baixo.
+- `k` - Move o cursor para cima.
+- `l` - Move o cursor para a direita.
+- `w` - Move o cursor para a palavra seguinte.
+- `b` - Move o cursor para a palavra anterior.
+- `gg` - Move o cursor para o início da primeira linha.
+- `G` - Move o cursor para o início da última linha.
+- `M` - Move o cursor para o início da linha no meio da tela.
+- `H` - Move o cursor para o início da linha no alto da tela.
+- `L` - Move o cursor para o início da linha no fim da tela.
 - `Ctrl + w + seta direcional` ou `Ctrl + w + h, j, k, l` - Alterna entre janelas.
 
 ## Modo de Inserção
@@ -69,11 +74,6 @@
 - `?palavra` - Busca a palavra de modo ascendente.
 - `n` - Continua com a busca.
 - `N` - Continua com a busca no sentido inverso.
-- `gg` - Move o cursor para o início da primeira linha.
-- `G` - Move o cursor para o início da última linha.
-- `M` - Move o cursor para o início da linha no meio da tela.
-- `H` - Move o cursor para o início da linha no alto da tela.
-- `L` - Move o cursor para o início da linha no fim da tela.
 
 ## Substituir
 - `:40s/palavra-antiga/palavra-nova/` - Substitui na linha 40 a `palavra-antiga` pela `palavra-nova`.
