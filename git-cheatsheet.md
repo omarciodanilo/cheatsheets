@@ -35,6 +35,7 @@
 - `git branch -r` - Lista branches remotas.
 - `git branch -r --merged master` - Lista branches remotas que já foram mescladas (seguro deletar).
 - `git push origin --delete <nome>` - Deleta branch no servidor.
+- `git branch -d <nome>` - Exclui uma branch local que já foi mergeada.
 - `git branch -D <nome>` - Força a exclusão de uma branch local (mesmo sem merge).
 
 ## Inspeção e diferenças
