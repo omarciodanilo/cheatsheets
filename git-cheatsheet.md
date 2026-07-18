@@ -65,6 +65,7 @@
 - `git push origin <branch>` - Envia seus commits locais para o servidor.
 - `git remote rename <antigo> <novo>` - Altera o nome de exibição do remoto (ex: de origin para upstream).
 - `git remote remove <nome>` - Remove a conexão com um servidor remoto específico.
+- `git remote set-url origin <nova-url>` - Altera URL da origin (ex. de link HTTPS para link SSH)
 
 ---
 
