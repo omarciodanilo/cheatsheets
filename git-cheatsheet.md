@@ -99,7 +99,7 @@ Usar tipo de alteração e descrição da alteração:
 [rodapé opcional para breaking changes ou issues relacionadas]
 ```
 
-### Exemplo:
+### Exemplo
 
 ```
 feat(auth): adiciona autenticação via token JWT
