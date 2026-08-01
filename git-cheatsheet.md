@@ -69,17 +69,62 @@
 
 ---
 
-## Padrões de nomenclatura (branches)
+## Padrões de nomenclatura de branches
 Usar prefixos para categorizar o trabalho e facilitar a automação:
 
-- `feat/nome-da-feature` — Novas funcionalidades.
-- `fix/descricao-do-bug` — Correções de bugs.
-- `hotfix/ajuste-urgente` — Correções críticas em produção.
-- `refactor/o-que-mudou` — Melhorias no código sem alterar comportamento.
+- `chore/nome-da-tarefa` — Tarefas não relacionadas a código ou documentação.
 - `docs/nome-do-arquivo` — Alterações apenas em documentação.
+- `feat/nome-da-feature` — Novas funcionalidades.
+- `fix/descrição-do-bug` — Correções de bugs.
+- `hotfix/ajuste-urgente` — Correções críticas em produção.
+- `perf/descrição-da-melhoria` — Alterações focadas exclusivamente em otimização de desempenho.
+- `refactor/o-que-mudou` — Melhorias no código sem alterar comportamento, mas melhora a estrutura ou legibilidade.
+- `release/versão` — Branches usadas para preparar uma nova versão de lançamento em produção (ex: release/v1.2.0).
+- `support/versão` ou `patch/descrição` — Manutenção de versões antigas do software que continuam ativas.
 - `test/nome-do-teste` — Criação ou ajuste de testes.
 
 **Dica:** usar letras minúsculas, separar palavras com hífen (`-`) e evitar nomes genéricos como `ajustes` ou `testes`.
+
+---
+
+## Padrões de descrição de commits
+Usar tipo de alteração e descrição da alteração:
+
+### Modelo
+```
+<tipo>(<escopo opcional>): <descrição curta no imperativo ou infinitivo>
+
+[corpo opcional detalhando o "o quê" e o "porquê"]
+
+[rodapé opcional para breaking changes ou issues relacionadas]
+```
+
+### Exemplo:
+
+```
+feat(auth): adiciona autenticação via token JWT
+
+Implementa o fluxo de login gerando um token JWT com validade de 24 horas
+para proteger as rotas da API e garantir que apenas usuários autenticados
+consigam acessar os recursos.`
+
+Closes #42
+```
+
+---
+
+### Tipos
+- `build` (Build): alterações que afetam o sistema de build ou dependências externas (ex: npm, pip, Docker, Maven).
+- `chore` (Chore): tarefas não relacionadas a código ou documentação.
+- `ci` (Continuous Integration): mudanças nos arquivos de configuração de CI/CD.
+- `docs` (Documentation): alterações apenas em documentação.
+- `feat` (Feature): novas funcionalidade.
+- `fix` (Bugfix): correções de bugs.
+- `perf` (Performance): alterações focadas exclusivamente em otimização de desempenho.
+- `refactor` (Refactoring): melhorias no código sem alterar comportamento, mas melhora a estrutura ou legibilidade.
+- `revert` (Revert): reversão de um commit anterior.
+- `style` (Styles): mudanças que não afetam a lógica do código (espaçamento, formatação, ponto e vírgula, etc.)
+- `test` (Test): adição ou correção de testes automatizados.
 
 ---
 
