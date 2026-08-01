@@ -111,8 +111,6 @@ consigam acessar os recursos.`
 Closes #42
 ```
 
----
-
 ### Tipos
 - `build` (Build): alterações que afetam o sistema de build ou dependências externas (ex: npm, pip, Docker, Maven).
 - `chore` (Chore): tarefas não relacionadas a código ou documentação.
