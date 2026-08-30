@@ -24,6 +24,8 @@
 
 ## Gerenciamento de branches
 - `git branch` - Lista branches locais.
+- `git branch -r` - Lista branches remotas.
+- `git branch -a` - Lista branches locais e remotas.
 - `git checkout -b <nome>` - Cria e muda para uma nova branch.
 - `git checkout <nome>` - Alterna entre branches existentes.
 - `git merge <nome>` - Une a branch escolhida à atual.
