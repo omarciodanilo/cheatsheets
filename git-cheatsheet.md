@@ -65,6 +65,7 @@
 - `git pull origin <branch>` - Traz novidades e mescla no seu código.
 - `git pull --rebase origin <branch>` - Integra mudanças de forma linear, sem commits de merge inúteis.
 - `git push origin <branch>` - Envia seus commits locais para o servidor.
+- `git push --set-upstream origin main` - Envia código local pela primeira vez ao repositório remoto e vincula ambos (rastreamento automático para git push e git pull).
 - `git remote rename <antigo> <novo>` - Altera o nome de exibição do remoto (ex: de origin para upstream).
 - `git remote remove <nome>` - Remove a conexão com um servidor remoto específico.
 - `git remote set-url origin <nova-url>` - Altera URL da origin (ex. de link HTTPS para link SSH)
